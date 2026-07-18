@@ -110,7 +110,7 @@ if st.button("🧠 Predict Disease", use_container_width=True):
 
         response = requests.post(
 
-            "http://127.0.0.1:8000/predict",
+            "https://ai-disease-prediction-system-znq7.onrender.com/predict",
 
             json={
 

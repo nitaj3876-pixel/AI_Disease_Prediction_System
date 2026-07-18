@@ -71,7 +71,7 @@ try:
 
     response=requests.get(
 
-        "http://127.0.0.1:8000/admin/dashboard"
+        "https://ai-disease-prediction-system-znq7.onrender.com/admin/dashboard"
 
     )
 

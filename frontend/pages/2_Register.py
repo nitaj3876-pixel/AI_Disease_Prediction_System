@@ -100,7 +100,7 @@ if st.button("📝 Create Account", use_container_width=True):
         try:
 
             response = requests.post(
-                "http://127.0.0.1:8000/register",
+                "https://ai-disease-prediction-system-znq7.onrender.com/register",
                 json=data
             )
 

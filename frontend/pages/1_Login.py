@@ -24,7 +24,7 @@ if st.button("Login", use_container_width=True):
 
     try:
         response = requests.post(
-            "http://127.0.0.1:8000/login",
+            "https://ai-disease-prediction-system-znq7.onrender.com",
             json=data
         )
 

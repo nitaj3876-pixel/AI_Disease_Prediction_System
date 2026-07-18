@@ -65,7 +65,7 @@ st.divider()
 try:
 
     response = requests.get(
-        f"http://127.0.0.1:8000/profile/{st.session_state.user_email}"
+        f"https://ai-disease-prediction-system-znq7.onrender.com/profile/{st.session_state.user_email}"
     )
 
     profile = response.json()
@@ -134,7 +134,7 @@ if submit:
 
     response = requests.put(
 
-        f"http://127.0.0.1:8000/profile/{email}",
+        f"https://ai-disease-prediction-system-znq7.onrender.com/profile/{email}",
 
         json=data
 

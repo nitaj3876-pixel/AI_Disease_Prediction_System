@@ -65,7 +65,7 @@ try:
 
     response = requests.get(
 
-        f"http://127.0.0.1:8000/latest-report/{st.session_state.user_email}"
+        f"https://ai-disease-prediction-system-znq7.onrender.com/latest-report/{st.session_state.user_email}"
 
     )
 
