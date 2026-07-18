@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+disease.db
+
+.env
+
+.streamlit/secrets.toml
+
+.idea/
+.vscode/
+
+*.log

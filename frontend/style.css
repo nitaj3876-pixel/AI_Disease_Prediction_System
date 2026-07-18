@@ -1,0 +1,740 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+html, body, [class*="css"]{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===========================
+   APP BACKGROUND
+=========================== */
+
+.stApp{
+    background: linear-gradient(135deg,#07111F,#0B1830,#12284B);
+    color:white;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+section[data-testid="stSidebar"]{
+    background:#08111F;
+    border-right:1px solid rgba(255,255,255,.08);
+}
+
+section[data-testid="stSidebar"] *{
+    color:white !important;
+}
+
+section[data-testid="stSidebar"] img{
+    display:block;
+    margin:auto;
+}
+
+/* Sidebar Navigation */
+
+div[data-testid="stSidebarNav"] a{
+    background:transparent;
+    border-radius:12px;
+    margin:8px;
+    transition:.3s;
+}
+
+div[data-testid="stSidebarNav"] a:hover{
+    background:#10D5C3;
+}
+
+div[data-testid="stSidebarNav"] a[aria-current="page"]{
+    background:linear-gradient(90deg,#00D4AA,#00F5C4);
+    color:black !important;
+    font-weight:bold;
+}
+
+/* ===========================
+   TITLES
+=========================== */
+
+h1{
+    color:white;
+}
+
+h2{
+    color:white;
+}
+
+h3{
+    color:white;
+}
+
+p{
+    color:#d6d6d6;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.stButton>button{
+
+    width:100%;
+
+    background:linear-gradient(90deg,#00D09C,#00E5C3);
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:14px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.stButton>button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px rgba(0,255,180,.45);
+
+    background:linear-gradient(90deg,#00E5C3,#00D09C);
+
+}
+
+/* ===========================
+   METRIC CARDS
+=========================== */
+
+div[data-testid="stMetric"]{
+
+    background:#13233C;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+
+}
+
+div[data-testid="stMetric"]:hover{
+
+    transform:translateY(-6px);
+
+    transition:.3s;
+
+    box-shadow:0 0 20px rgba(0,255,180,.25);
+
+}
+
+/* ===========================
+   INFO BOXES
+=========================== */
+
+div[data-testid="stAlert"]{
+
+    border-radius:18px;
+
+    border:none;
+
+}
+
+/* ===========================
+   INPUT BOXES
+=========================== */
+
+.stTextInput input{
+
+    background:#13233C;
+
+    color:white;
+
+    border-radius:12px;
+
+    border:1px solid #00D9B2;
+
+}
+
+.stTextInput input:focus{
+
+    border:2px solid #00FFD0;
+
+}
+
+/* Password */
+
+.stTextInput{
+
+    color:white;
+
+}
+
+/* ===========================
+   SELECT BOX
+=========================== */
+
+.stSelectbox div{
+
+    background:#13233C;
+
+    color:white;
+
+}
+
+/* ===========================
+   MULTISELECT
+=========================== */
+
+.stMultiSelect div{
+
+    background:#13233C;
+
+    color:white;
+
+}
+
+/* ===========================
+   DATAFRAME
+=========================== */
+
+div[data-testid="stDataFrame"]{
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+/* ===========================
+   DIVIDER
+=========================== */
+
+hr{
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+img{
+
+    border-radius:20px;
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#08111F;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#00D7B0;
+
+    border-radius:20px;
+
+}
+
+/* ===========================
+   ANIMATION
+=========================== */
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+img{
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+
+    text-align:center;
+
+    color:gray;
+
+    margin-top:40px;
+
+}
+
+/* ===========================
+   HERO TEXT
+=========================== */
+
+.hero-title{
+
+    font-size:65px;
+
+    font-weight:800;
+
+    line-height:1.1;
+
+}
+
+.hero-green{
+
+    color:#10D7C3;
+
+}
+
+.hero-text{
+
+    font-size:22px;
+
+    color:#D6D6D6;
+
+}
+
+/* ===========================
+   GLOW EFFECT
+=========================== */
+
+.glow{
+
+    box-shadow:0 0 40px rgba(0,255,170,.25);
+
+}
+/* Dashboard Cards */
+
+div[data-testid="stMetric"]{
+
+background:#13233C;
+
+padding:25px;
+
+border-radius:18px;
+
+border:1px solid rgba(255,255,255,.08);
+
+box-shadow:0px 10px 20px rgba(0,0,0,.35);
+
+}
+
+/* Table */
+
+table{
+
+border-collapse:collapse;
+
+width:100%;
+
+}
+
+table td{
+
+background:#13233C;
+
+color:white;
+
+padding:12px;
+
+border:1px solid #1e3557;
+
+}
+
+table th{
+
+background:#00D5B2;
+
+color:black;
+
+padding:12px;
+
+}
+
+/* Sidebar Button */
+
+section[data-testid="stSidebar"] .stButton button{
+
+background:#00D5B2;
+
+color:black;
+
+font-weight:bold;
+
+}
+
+/* Info Box */
+
+div[data-testid="stAlert"]{
+
+border-radius:15px;
+
+}
+
+/* Divider */
+
+hr{
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+/* Multiselect */
+
+.stMultiSelect div{
+
+background:#13233C;
+
+color:white;
+
+border-radius:10px;
+
+}
+
+/* Progress Bar */
+
+.stProgress > div > div{
+
+background:#00D9B2;
+
+}
+
+/* Info Box */
+
+div[data-testid="stAlert"]{
+
+border-radius:15px;
+
+}
+
+/* Success */
+
+div[data-testid="stSuccess"]{
+
+border-radius:15px;
+
+}
+
+/* Warning */
+
+div[data-testid="stWarning"]{
+
+border-radius:15px;
+
+}
+/* ===========================
+   HISTORY TABLE
+=========================== */
+
+div[data-testid="stDataFrame"]{
+
+    background:#13233C;
+
+    border-radius:18px;
+
+    padding:10px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/* Download Button */
+
+.stDownloadButton button{
+
+    width:100%;
+
+    background:linear-gradient(90deg,#00D4AA,#00F5C4);
+
+    color:black;
+
+    font-weight:bold;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:12px;
+
+}
+
+.stDownloadButton button:hover{
+
+    transform:translateY(-3px);
+
+    transition:.3s;
+
+    box-shadow:0 0 20px rgba(0,255,180,.35);
+
+}
+
+/* Metrics */
+
+div[data-testid="stMetric"]{
+
+    background:#13233C;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    text-align:center;
+
+}
+/* ===========================
+   REPORT PAGE
+=========================== */
+
+.report-card{
+
+    background:#13233C;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    margin-bottom:20px;
+
+}
+
+.report-card h3{
+
+    color:#00E5C3;
+
+}
+
+.stDownloadButton button{
+
+    background:linear-gradient(90deg,#00D4AA,#00F5C4);
+
+    color:black;
+
+    font-weight:bold;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:12px;
+
+}
+
+.stDownloadButton button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px rgba(0,255,180,.35);
+
+}
+/* ===========================
+   PROFILE PAGE
+=========================== */
+
+.profile-card{
+
+background:#13233C;
+
+padding:25px;
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,.08);
+
+box-shadow:0px 10px 20px rgba(0,0,0,.35);
+
+}
+
+.profile-card:hover{
+
+transform:translateY(-5px);
+
+transition:.3s;
+
+}
+
+.stTextInput input{
+
+background:#13233C;
+
+color:white;
+
+border-radius:12px;
+
+border:1px solid #00D4AA;
+
+}
+
+.stTextArea textarea{
+
+background:#13233C;
+
+color:white;
+
+border-radius:12px;
+
+border:1px solid #00D4AA;
+
+}
+
+.stNumberInput input{
+
+background:#13233C;
+
+color:white;
+
+}
+
+.stSelectbox div{
+
+background:#13233C;
+
+color:white;
+
+}
+
+.stButton button{
+
+background:linear-gradient(90deg,#00D4AA,#00F5C4);
+
+color:black;
+
+font-weight:bold;
+
+border:none;
+
+border-radius:12px;
+
+padding:12px;
+
+}
+
+.stButton button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0px 0px 20px rgba(0,255,180,.35);
+
+}
+/* ===========================
+   ADMIN DASHBOARD
+=========================== */
+
+.admin-card{
+
+background:#13233C;
+
+padding:20px;
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,.08);
+
+box-shadow:0px 10px 20px rgba(0,0,0,.35);
+
+}
+
+.admin-card:hover{
+
+transform:translateY(-5px);
+
+transition:.3s;
+
+}
+
+.stDataFrame{
+
+border-radius:15px;
+
+overflow:hidden;
+
+}
+
+.stMetric{
+
+background:#13233C;
+
+padding:15px;
+
+border-radius:18px;
+
+}
+
+.stSelectbox div{
+
+background:#13233C;
+
+color:white;
+
+}
+
+.stTextInput input{
+
+background:#13233C;
+
+color:white;
+
+}
+
+.stButton button{
+
+background:linear-gradient(90deg,#00D4AA,#00F5C4);
+
+color:black;
+
+font-weight:bold;
+
+border:none;
+
+border-radius:12px;
+
+padding:12px;
+
+}
+
+.stButton button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0px 0px 20px rgba(0,255,180,.35);
+
+}
